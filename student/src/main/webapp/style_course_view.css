@@ -1,0 +1,89 @@
+/* Global reset and font style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Main container */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Styling the view course table */
+.view-course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.view-course-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.view-course-table td {
+    padding: 15px;
+    background-color: #f9f9f9; /* Default row color */
+}
+
+.view-course-table tr:nth-child(even) td {
+    background-color: #e9ecef; /* Alternate row color */
+}
+
+/* Action button styles */
+.action-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff; /* Blue for back */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Button group styles */
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+.large-text {
+    font-size: 1.5em; /* Adjust size as needed */
+    font-weight: bold; /* Optional: makes the text bold */
+    color: #333; /* Optional: color to match your theme */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .view-course-table td {
+        padding: 10px;
+    }
+}
